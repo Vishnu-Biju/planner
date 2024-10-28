@@ -1,11 +1,18 @@
 'use client'
 
 import { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 import Image from 'next/image'
 import PlaceDetail from './place-detail'
 
-const images = [
+// Define the image type
+type ImageType = {
+  src: string
+  alt: string
+  name: string
+}
+
+const images: ImageType[] = [
   { src: "/assets/thomman1.jpg", alt: "Thomman Kuth Waterfalls", name: "Thomman Kuth Waterfalls" },
   { src: "/assets/thattekkad1.jpg", alt: "thattekkad kayaking", name: "Thattekkad" },
   { src: "/assets/forestroad.jpg", alt: "Scenic Forest Road", name: "Forest Road" },
@@ -16,7 +23,7 @@ const images = [
 ]
 
 export default function Gallery() {
-  const [selectedPlace, setSelectedPlace] = useState(null)
+  const [selectedPlace, setSelectedPlace] = useState<ImageType | null>(null)
 
   return (
     <section id="gallery" className="py-20 bg-gray-900">
@@ -24,6 +31,7 @@ export default function Gallery() {
         <motion.h2
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.5 }}
           className="text-6xl font-bold text-center mb-12 text-white"
         >
@@ -35,6 +43,7 @@ export default function Gallery() {
               key={index}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="relative h-64 overflow-hidden rounded-xl group cursor-pointer"
               onClick={() => setSelectedPlace(image)}
@@ -42,9 +51,9 @@ export default function Gallery() {
               <Image
                 src={image.src}
                 alt={image.alt}
-                layout="fill"
-                objectFit="cover"
-                className="transition-all duration-300 group-hover:scale-110 group-hover:blur-sm"
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                className="object-cover transition-all duration-300 group-hover:scale-110 group-hover:blur-sm"
               />
               <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                 <h3 className="text-white text-2xl font-bold text-center">{image.name}</h3>
@@ -53,11 +62,9 @@ export default function Gallery() {
           ))}
         </div>
       </div>
-      <AnimatePresence>
-        {selectedPlace && (
-          <PlaceDetail place={selectedPlace} onClose={() => setSelectedPlace(null)} />
-        )}
-      </AnimatePresence>
+      {selectedPlace && (
+        <PlaceDetail place={selectedPlace} onClose={() => setSelectedPlace(null)} />
+      )}
     </section>
   )
 }
