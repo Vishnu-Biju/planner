@@ -11,7 +11,7 @@ const images = [
   { src: "/assets/forestroad.jpg", alt: "Scenic Forest Road", name: "Forest Road" },
   { src: "/assets/paniyeli2.jpg", alt: "Paniyeli Poru", name: "Paniyeli Poru" },
   { src: "/assets/kadamakkudi1.webp", alt: "Kadamakkudi Backwaters", name: "Kadamakkudi" },
-  { src: "/assets/vypin1.avif", alt: "Vypin Beach", name: "Vypin Beach" },
+  { src: "/assets/sunset.jpg", alt: "Vypin Beach", name: "Vypin Beach" },
   { src: "/assets/toddy1.jpg", alt: "Local Toddy Shop", name: "Toddy Shop" },
 ]
 

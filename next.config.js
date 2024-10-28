@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: ['basemaps.cartocdn.com']
-}}
-
-export default nextConfig;
+      domains: ['basemaps.cartocdn.com']
+    }
+  }
+  
+  module.exports = nextConfig;
+  

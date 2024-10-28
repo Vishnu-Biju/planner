@@ -25,7 +25,7 @@ const placeInfo: PlaceInfoMap = {
   "Thomman Kuth Waterfalls": {
     description: "Thomman Kuth Waterfalls is a hidden gem nestled in the lush forests of Kerala. The cascading waters create a mesmerizing spectacle, perfect for nature lovers and photographers alike. The serene atmosphere and the soothing sound of water make it an ideal spot for relaxation and rejuvenation.",
     activities: ["Photography", "Nature Walk", "Picnic"],
-    additionalImages: ["/assets/thomman2.jpg", "/assets/thomman3.jpg"]
+    additionalImages: ["/assets/thomman2.jpg", "/assets/thomman1.jpg"]
   },
   "Forest Road": {
     description: "The scenic Forest Road offers a captivating journey through dense, verdant forests. As you ride along this picturesque route, you'll be surrounded by towering trees, diverse flora, and the occasional glimpse of local wildlife. The cool shade and fresh air make for a refreshing travel experience.",
@@ -35,17 +35,17 @@ const placeInfo: PlaceInfoMap = {
   "Paniyeli Poru": {
     description: "Paniyeli Poru is a breathtaking river-side destination known for its rocky terrain and gushing waters. The area offers a perfect blend of natural beauty and adventure. Visitors can enjoy the panoramic views of the river, explore the unique rock formations, or simply relax by the water's edge.",
     activities: ["Rock Climbing", "River Trekking", "Picnic"],
-    additionalImages: ["/assets/paniyeli1.jpg", "/assets/paniyeli3.jpg"]
+    additionalImages: []
   },
   "Kadamakkudi": {
     description: "Kadamakkudi is a serene backwater destination that showcases the tranquil beauty of Kerala's waterways. The area is known for its network of canals, lush paddy fields, and traditional village life. A visit here offers a glimpse into the peaceful rural lifestyle of Kerala.",
     activities: ["Backwater Cruise", "Fishing", "Village Walk"],
-    additionalImages: ["/assets/kadamakkudi2.jpg", "/assets/kadamakkudi2.webp"]
+    additionalImages: [ "/assets/kadamakkudi2.webp"]
   },
   "Vypin Beach": {
     description: "Vypin Beach is a pristine coastal paradise known for its golden sands and clear waters. The beach offers a perfect setting for a romantic evening stroll or to watch a spectacular sunset. The peaceful atmosphere and the rhythmic sound of waves create a soothing ambiance.",
     activities: ["Beach Walk", "Sunset Viewing", "Swimming"],
-    additionalImages: ["/assets/vypin2.jpg", "/assets/vypin3.jpg"]
+    additionalImages: ["/assets/sunset.jpg", "/assets/vypin1.avif"]
   },
   "Toddy Shop": {
     description: "A visit to a local Toddy Shop offers a unique cultural experience. These traditional establishments serve 'toddy', a mildly alcoholic beverage made from palm sap, along with authentic Kerala cuisine. It's a great place to taste local flavors and immerse yourself in the local culture.",
@@ -55,7 +55,7 @@ const placeInfo: PlaceInfoMap = {
   "Thattekkad": {
     description: "The Thattekkad Bird Sanctuary, Kerala's first bird sanctuary, is a haven for bird enthusiasts, nestled in a lush, flat forest alongside the Periyar River. Spanning around 25 square kilometers, it boasts rich biodiversity and a tranquil environment that offers a peaceful retreat and beautiful forested landscapes.",
     activities: ["Kayaking", "Forest Route Ride", "Peaceful Ambience"],
-    additionalImages: ["/assets/thattekkad2.jpg", "/assets/thattekkad3.jpg"]
+    additionalImages: ["/assets/thattekkad1.jpg", "/assets/thattekkad2.webp"]
   }
 }
 
